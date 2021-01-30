@@ -89,7 +89,6 @@ jQuery(document).ready(function($) {
         i.next('.validate').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
-    return false;
   });
 
 });
