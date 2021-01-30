@@ -89,18 +89,7 @@ jQuery(document).ready(function($) {
         i.next('.validate').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
-    if (ferror) return false;
-    else var str = $(this).serialize();
-
-    var this_form = $(this);
-    var action = $(this).attr('action');
-
-    if( ! action ) {
-      this_form.find('.loading').slideUp();
-      this_form.find('.error-message').slideDown().html('The form action property is not set!');
-      return false;
-    }
-    return True;
+    return false;
   });
 
 });
