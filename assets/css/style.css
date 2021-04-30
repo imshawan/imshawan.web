@@ -1,4 +1,10 @@
-
+:root{
+  --mainAccent: red;
+  --cardsAccent: rgb(255, 0, 0, 0.7);
+  --shadowHighlight: rgb(255, 108, 108);
+  --submitBtn: rgb(255, 0, 0);
+  --submitBtnHover: rgb(255, 0, 0, 0.5);
+}
 
 /*--------------------------------------------------------------
 # General
@@ -9,11 +15,11 @@ body {
 }
 
 a {
-  color: #0563bb;
+  color: var(--mainAccent);
 }
 
 a:hover {
-  color: #067ded;
+  color: var(--mainAccent);
   text-decoration: none;
 }
 
@@ -32,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #0563bb;
+  background: var(--mainAccent);
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -47,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #0678e3;
+  background: var(--mainAccent);
   transition: background 0.2s ease-in-out;
 }
 
@@ -70,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #0563bb;
+  border: 6px solid var(--mainAccent);
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -160,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  background: #e8efff;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -188,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
-  background: #0563bb;
+  background: var(--mainAccent);
 }
 
 .nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
@@ -233,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #0563bb;
+  color: var(--mainAccent);
 }
 
 /*--------------------------------------------------------------
@@ -279,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero p span {
-  color: #0563bb;
+  color: var(--mainAccent);
   letter-spacing: 1px;
 }
 
@@ -297,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: var(--mainAccent);
 }
 
 @media (max-width: 992px) {
@@ -355,7 +361,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #0563bb;
+  background: var(--mainAccent);
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -374,7 +380,7 @@ section {
 }
 
 .about h5 {
-  color: #2373be;
+  color: var(--mainAccent);
   background:#f7f8f9;
   display: inline-block;
   padding: 5px 15px;
@@ -392,7 +398,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #0563bb;
+  color: var(--mainAccent);
 }
 
 .about .content p:last-child {
@@ -417,7 +423,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #0563bb;
+  background: var(--mainAccent);
   padding: 12px;
   color: #fff;
   border-radius: 50px;
@@ -469,7 +475,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #0563bb;
+  background-color: var(--mainAccent);
 }
 
 /*--------------------------------------------------------------
@@ -486,7 +492,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid var(--mainAccent);
   position: relative;
 }
 
@@ -496,7 +502,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  color: var(--mainAccent);
   margin-bottom: 10px;
 }
 
@@ -530,7 +536,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #0563bb;
+  border: 2px solid var(--mainAccent);
 }
 
 /*--------------------------------------------------------------
@@ -564,7 +570,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #0563bb;
+  color: var(--mainAccent);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -664,7 +670,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #148af9;
+  color: var(--mainAccent);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -751,9 +757,9 @@ section {
 
 .services .icon-box:hover {
   border-color: #fff;
-  background-color: #0563bb;
+  background-color: var(--cardsAccent);
   color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(37, 124, 255, 0.8);
+  box-shadow: 0px 0 35px 0 var(--shadowHighlight);
 }
 
 .services .iconbox-blue i {
@@ -860,7 +866,7 @@ section {
 }
 
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #90c8fc;
+  color: var(--shadowHighlight);
   font-size: 26px;
 }
 
@@ -897,7 +903,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #0563bb !important;
+  background-color: var(--mainAccent) !important;
 }
 
 @media (min-width: 992px) {
@@ -916,7 +922,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #0563bb;
+  color: var(--mainAccent);
   float: left;
   width: 44px;
   height: 44px;
@@ -948,7 +954,7 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #0563bb;
+  background: var(--mainAccent);
   color: #fff;
 }
 
@@ -1026,7 +1032,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #0563bb;
+  background: var(--submitBtn);
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1035,7 +1041,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #0678e3;
+  background: var(--submitBtnHover);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1084,7 +1090,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #0563bb !important;
+  background-color: var(--mainAccent) !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -1152,7 +1158,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
+  background: var(--mainAccent);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1165,7 +1171,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #0678e3;
+  background: var(--shadowHighlight);
   color: #fff;
   text-decoration: none;
 }
