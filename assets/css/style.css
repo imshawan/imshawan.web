@@ -9,7 +9,9 @@
 
   --submitBtn: var(--mainAccent);
 
-  --submitBtnHover: var(--shadowHighlight)
+  --submitBtnHover: var(--shadowHighlight);
+
+  --gradientCol: rgb(255, 230, 0);
 }
 
 /*--------------------------------------------------------------
@@ -479,9 +481,9 @@ section {
 
 .skills .progress-bar {
   width: 1px;
-  height: 10px;
+  height: 13px;
   transition: .9s;
-  background-color: var(--mainAccent);
+  background: linear-gradient(to right, var(--mainAccent), rgba(var(--gradientCol)));
 }
 
 /*--------------------------------------------------------------
