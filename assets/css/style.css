@@ -1,9 +1,15 @@
+
+
 :root{
-  --mainAccent: red;
-  --cardsAccent: rgb(255, 0, 0, 0.7);
-  --shadowHighlight: rgb(255, 108, 108);
-  --submitBtn: rgb(255, 0, 0);
-  --submitBtnHover: rgb(255, 0, 0, 0.5);
+  --colors: red;
+  --mainAccent: rgba(var(--colors));
+
+  --cardsAccent: rgba(var(--colors), 0.7);
+  --shadowHighlight: rgba(var(--colors), 0.6);
+
+  --submitBtn: var(--mainAccent);
+
+  --submitBtnHover: var(--shadowHighlight)
 }
 
 /*--------------------------------------------------------------
