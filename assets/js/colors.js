@@ -1,12 +1,6 @@
 // JavaScript code to pick a random color from array and injecting it to html
 
-        function changeColor(){
-            document.documentElement.style
-            .setProperty('--colors', '255, 0, 0');
-            setInterval('pickARandomColor()', 10000);
-        }
-
-        function pickARandomColor() {
+        function changeColor() {
             // Array containing colors
             var colors = [
                 '255, 0, 0', '0, 255, 0', '0, 0, 255', '255, 166, 0', '0, 0, 0', '82, 5, 123', '22, 36, 71', '84, 18, 59',
