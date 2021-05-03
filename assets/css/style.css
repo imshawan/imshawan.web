@@ -102,14 +102,8 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(90deg);
-  }
   50% {
     transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(90deg);
   }
   100% {
     transform: rotate(0deg);
@@ -120,18 +114,13 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(90deg);
-  }
   50% {
     transform: rotate(180deg);
-  }
-  75% {
-    transform: rotate(90deg);
   }
   100% {
     transform: rotate(0deg);
   }
+}
 
 
 /*--------------------------------------------------------------
