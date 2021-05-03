@@ -4,11 +4,6 @@
 
   // Preloader
   $(window).on('load', function() {
-    if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
-        $(this).remove();
-      });
-    }
     // JavaScript code to pick a random color from array and injecting it to html
     // Array containing colors
     var colors = [
@@ -27,6 +22,12 @@
         Math.random() * gradientColors.length)];
     document.documentElement.style
     .setProperty('--gradientCol', random_Gradcolor);
+    
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function() {
+        $(this).remove();
+      });
+    }
   });
 
   // Hero typed
