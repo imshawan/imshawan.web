@@ -91,8 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   background-clip: content-box, border-box;
   border-radius: 60px;
   box-shadow:
-    0 0 3px 3px rgb(255, 0, 0, 0.2), /* middle magenta */
-    0 0 6px 6px rgb(48, 32, 255, 0.3); /* outer cyan */
+    0 0 6px 6px rgb(48, 32, 255, 0.3);
 
   width: 60px;
   height: 60px;
