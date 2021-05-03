@@ -89,7 +89,6 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 0, 0, 0.8),rgb(48, 32, 255, 0.8), rgb(0, 255, 255, 0.8));
   background-origin: border-box;
   background-clip: content-box, border-box;
-  border-radius: 60px;
 
   width: 60px;
   height: 60px;
@@ -101,8 +100,14 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     transform: rotate(0deg);
   }
+  33% {
+    transform: rotate(180deg);
+  }
+  66%{
+    transform: rotate(90deg);
+  }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -110,8 +115,14 @@ h1, h2, h3, h4, h5, h6 {
   0% {
     transform: rotate(0deg);
   }
+  33% {
+    transform: rotate(180deg);
+  }
+  66%{
+    transform: rotate(90deg);
+  }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 
