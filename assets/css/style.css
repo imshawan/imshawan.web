@@ -90,8 +90,6 @@ h1, h2, h3, h4, h5, h6 {
   background-origin: border-box;
   background-clip: content-box, border-box;
   border-radius: 60px;
-  box-shadow:
-    0 0 5px 3px rgba(0, 102, 255, 0.8);
 
   width: 60px;
   height: 60px;
