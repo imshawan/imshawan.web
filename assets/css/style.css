@@ -85,12 +85,12 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 9px solid transparent;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #ff0000,#3020ff,cyan);
+  border: 8px solid transparent;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 0, 0, 0.8),rgb(48, 32, 255, 0.8), rgb(0, 255, 255, 0.8));
   background-origin: border-box;
   background-clip: content-box, border-box;
   border-radius: 65px;
- 
+
   width: 65px;
   height: 65px;
   -webkit-animation: animate-preloader 1s linear infinite;
@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(360deg);
   }
 }
+
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
