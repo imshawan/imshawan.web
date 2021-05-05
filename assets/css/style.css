@@ -569,7 +569,7 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: #e8efff;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -583,11 +583,15 @@ section {
   line-height: 1;
   text-transform: uppercase;
   color: #272829;
-  margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li.filter-active {
+  color: var(--mainAccent);
+  border-bottom-style: solid;
+  border-bottom-color:var(--mainAccent);
+}
+.portfolio #portfolio-flters li:hover {
   color: var(--mainAccent);
 }
 
