@@ -716,7 +716,17 @@ section {
   bottom: 15px;
   right: 15px;
 }
+.cert-view {
+  background: var(--submitBtn);
+  border: 0;
+  padding: 10px 35px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
 
+.cert-view:hover {
+  background: var(--submitBtnHover);
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
