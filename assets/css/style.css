@@ -20,6 +20,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  
 }
 
 a {
@@ -391,6 +392,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1164%26quot%3b)' fill='none'%3e%3cpath d='M259.753%2c330.322C289.792%2c329.62%2c313.153%2c307.032%2c327.676%2c280.728C341.641%2c255.434%2c345.451%2c225.385%2c331.729%2c199.958C317.318%2c173.255%2c290.088%2c154.185%2c259.753%2c154.87C230.398%2c155.533%2c207.743%2c177.581%2c193.198%2c203.087C178.817%2c228.307%2c172.639%2c258.314%2c186.095%2c284.039C200.5%2c311.578%2c228.682%2c331.049%2c259.753%2c330.322' fill='rgba(130%2c 190%2c 255%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1213.1182785051665 476.1694501271938L1311.8805079417355 474.44554899992295 1259.9135415325447 327.16415540870497z' fill='rgba(130%2c 190%2c 255%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M718.804%2c207.572C734.203%2c207.485%2c748.538%2c199.746%2c756.41%2c186.511C764.463%2c172.971%2c766.215%2c155.585%2c757.548%2c142.43C749.516%2c130.238%2c733.404%2c129.5%2c718.804%2c129.432C704.03%2c129.363%2c687.623%2c129.773%2c679.426%2c142.064C670.528%2c155.406%2c672.189%2c173.197%2c680.451%2c186.942C688.467%2c200.277%2c703.245%2c207.66%2c718.804%2c207.572' fill='rgba(130%2c 190%2c 255%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1206.3080877318394 236.791866312003L1233.5878273851717 391.5029578518506 1388.2989189250193 364.22321819851817 1361.0191792716869 209.51212665867058z' fill='rgba(130%2c 190%2c 255%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1164'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
