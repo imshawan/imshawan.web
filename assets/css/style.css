@@ -180,15 +180,17 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: flex;
   align-items: center;
-  color: #45505b;
+/* color: #45505b;
+background: #e8efff; */
+  color: var(--mainAccent);
   padding: 10px 18px;
   margin-bottom: 10px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
   border: 1px solid var(--mainAccent);
-  background: #e8efff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -317,7 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .social-links a {
   font-size: 32px;
-  margin: 9px 9px 9px 9px;
+  margin: 12px 10px 12px 11px;
   display: inline-block;
   color: #45505b;
   line-height: 1;
@@ -326,8 +328,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .social-links .buttons {
   display: inline-block;
-  height: 50px;
-  width: 50px;
+  height: 55px;
+  width: 55px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px;
   box-sizing: border-box;
