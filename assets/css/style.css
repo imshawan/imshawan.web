@@ -424,6 +424,7 @@ section {
   width: 20rem; 
   border-width: 0.7rem; 
   border-color: rgba(0, 123, 255, 0.2);
+  transition: 2s ease-in;
 }
 .about .content h3 {
   font-weight: 700;
@@ -564,6 +565,10 @@ section {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.resume .resume-item .resume-h5-new {
+  text-transform: uppercase;
 }
 
 .resume .resume-item ul {
