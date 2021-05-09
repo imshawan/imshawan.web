@@ -313,12 +313,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .social-links a {
-  font-size: 24px;
+  font-size: 32px;
+  margin: 9px 9px 9px 9px;
   display: inline-block;
   color: #45505b;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
+}
+#hero .social-links .buttons {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-out 0s;
 }
 
 #hero .social-links a:hover {
