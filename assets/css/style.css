@@ -417,6 +417,14 @@ section {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+.about .img-fluid {
+  border-radius: 50% !important; 
+  border-style: solid; 
+  height: 20rem; 
+  width: 20rem; 
+  border-width: 0.7rem; 
+  border-color: rgba(0, 123, 255, 0.2);
+}
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
