@@ -526,7 +526,7 @@ section {
 
 .skills .progress-bar {
   width: 1px;
-  height: 13px;
+  height: 16px;
   transition: .9s;
   background: linear-gradient(to right, var(--mainAccent), rgba(var(--gradientCol)));
 }
