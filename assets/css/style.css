@@ -22,6 +22,9 @@ body {
   color: #272829;
   
 }
+.first-letter {
+  color: var(--mainAccent);
+}
 
 a {
   color: var(--mainAccent);
@@ -770,6 +773,7 @@ section {
   padding: 10px 35px;
   transition: 0.4s;
   border-radius: 50px;
+  font-weight: bold;
 }
 
 .cert-view:hover {
