@@ -68,7 +68,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: background 0.2s ease-in-out;
 }
 --------------------------------------------------------------*/
-
+.h5-new {
+    font-size: 17px;
+    font-weight: 500;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -646,6 +649,7 @@ section {
 }
 
 .icon-size {
+  color: var(--mainAccent);
   font-size: x-large;
 }
 .icon-size-2 {
