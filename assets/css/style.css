@@ -561,8 +561,7 @@ section {
 }
 .top { /*
   background: #6422EB; */
-  background: linear-gradient(to right, var(--mainAccent), rgba(var(--gradientCol)));
-
+  background: var(--mainAccent);
   display: flex;
   flex-direction: row;
   height: 70px;
