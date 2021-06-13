@@ -76,6 +76,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-weight: 500;
 }
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -686,12 +693,13 @@ section {
   height: 260px;
   width: 615px;
 }
+
 @media (max-width: 992px) {
   .container-x {
     padding-left: 0px!important;
   }
   .email-x.expand{
-    height: 400px;
+    height: 415px;
     width: 348px;
   }
   .top {
@@ -700,6 +708,7 @@ section {
   .second-row {
     margin-left: 10px!important;
   }
+
 }
 .expand .from {
   opacity: 0;
@@ -786,6 +795,45 @@ section {
   height: 16px;
   transition: .9s;
   background: linear-gradient(to right, var(--mainAccent), rgba(var(--gradientCol)));
+}
+.skills .section-heading {
+  font-weight: 700!important;
+  line-height: 1.2!important;
+  font-size: 1.75rem!important;
+}
+.skills-content {
+  margin-bottom: 50px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.filled {
+  color: var(--mainAccent);
+}
+.no-bullets > li .ability-score {
+  float: right;
+  margin-right: 15px;
+}
+.no-bullets {
+  list-style: none;
+  margin-left: -30px;
+}
+.no-bullets > li {
+  margin-bottom: 5px;
+}
+.no-bullets > li > i {
+  font-size: 20px;
+  padding-right: 2px;
+  color: var(--mainAccent);
+}
+.ability-title {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
