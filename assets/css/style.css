@@ -451,7 +451,6 @@ section {
   border-color: rgba(240, 240, 240, 0.2);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   overflow: hidden;
-  animation: slide-in-left 1s ease-in-out both;
 }
 @keyframes slide-in-left {
   0% {
@@ -807,6 +806,7 @@ section {
 }
 .fa {
   display: inline-block;
+  color: rgb(0, 0, 0, 0.5);
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
@@ -814,6 +814,7 @@ section {
   -moz-osx-font-smoothing: grayscale;
 }
 .filled {
+  transition: 1s ease-in;
   color: var(--mainAccent);
 }
 .no-bullets > li .ability-score {
