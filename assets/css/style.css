@@ -814,7 +814,6 @@ section {
   -moz-osx-font-smoothing: grayscale;
 }
 .filled {
-  transition: 1s ease-in;
   color: var(--mainAccent);
 }
 .no-bullets > li .ability-score {
