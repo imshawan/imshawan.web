@@ -355,7 +355,6 @@ background: #e8efff; */
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-out 0s;
 }
 
 #hero .social-links a:hover {
