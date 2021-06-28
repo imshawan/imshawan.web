@@ -34,6 +34,20 @@
 </head>
 
 <body>
+  <!-- ProgressBAr Top-->
+  <div class="progress-container fixed-top">
+    <span class="progress-bar" id="myBar"></span>
+  </div>
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+}
+  </script>
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
@@ -52,9 +66,10 @@
     </nav><!-- .nav-menu -->
 
   </header><!-- End Header -->
-
+  
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
+    
     <link href="./assets/particles/particles.css" rel="stylesheet">
     <script src="./assets/particles/particles.js"></script>
     <div id="particles-js"></div>
@@ -868,7 +883,6 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
