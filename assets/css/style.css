@@ -150,6 +150,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Progress
+--------------------------------------------------------------*/
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  height: 7px;
+  display: block;
+}
+.progress-bar {
+  background-color: var(--mainAccent);
+  width: 0%;
+  display: block;
+  height: inherit;
+  transition: .1s ease-in;
+}
+
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
@@ -355,6 +372,9 @@ background: #e8efff; */
   border-radius: 50px;
   justify-content: center;
   align-items: center;
+  /*
+  transition: all 0.3s ease-out 0s;
+  */
 }
 
 #hero .social-links a:hover {
@@ -723,6 +743,7 @@ section {
 .expand .to-contents {
   transform: scale(1);
 }
+
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
