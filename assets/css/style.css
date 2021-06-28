@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 .progress-container {
   width: 100%;
   background-color: transparent;
-  height: 7px;
+  height: 8px;
   display: block;
 }
 .progress-bar {
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 0%;
   display: block;
   height: inherit;
-  transition: .1s ease-in;
+  transition: .2s ease-in;
 }
 
 /*--------------------------------------------------------------
