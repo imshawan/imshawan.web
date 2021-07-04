@@ -1129,11 +1129,12 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  text-align: center;
+  text-align: center;  
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
-  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  border-radius: 10px;
+  box-shadow: 0px 0 35px 0 rgba(110, 123, 131, 0.3);
 }
 
 .services .icon-box .icon {
@@ -1263,7 +1264,37 @@ section {
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
-
+.btn-github{
+  margin-top: 20px;
+  margin-left: 25%;
+}
+.github-icon{
+  padding: 5px 5px;
+  display: flex;
+  font-size: 25px;
+  margin-left: 2px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.7);
+}
+.github-icon i{
+  color: rgb(0, 0, 0)!important;
+}
+.btn-github .btn-btn{
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #e6e9ec;
+  color: rgb(0, 0, 0);
+}
+.btn-github .btn-btn p{
+  padding: 8px 17px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1345,12 +1376,24 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+.contact .info-bg{
+  height: 350px;
+  background: rgba(var(--colors), 0.7);;
+  border-radius: 10px;
+  box-shadow: 0px 0 15px 0 rgba(var(--colors), 0.4);;
+}
 .contact .info {
   width: 100%;
-  background: #fff;
+  margin-top: 50px;
+  margin-left: 20px;
+  background: transparent;
 }
 
 .contact .info i {
+  /*
+  background: #eef7ff;
+    */
   font-size: 20px;
   color: var(--mainAccent);
   float: left;
@@ -1361,36 +1404,42 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .contact .info h4 {
+  /*
+    color: #45505b;
+    */
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: #fff;
 }
 
 .contact .info p {
+  /*
+    color: #728394;
+    */
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #728394;
+  color: #fff;
 }
 
-.contact .info .email, .contact .info .phone {
+.contact .info .email, .contact .info .phone, .telegram {
   margin-top: 40px;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i, .contact .info .telegram:hover i {
   background: var(--mainAccent);
   color: #fff;
 }
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+  background:transparent;
 }
 
 .contact .php-email-form .form-group {
@@ -1491,7 +1540,13 @@ section {
     transform: rotate(360deg);
   }
 }
-
+@media (max-width: 992px) {
+  .info-bg{
+  margin-left: 15px;
+  margin-right: 15px;
+  }
+  
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
