@@ -12,6 +12,13 @@
   --submitBtnHover: var(--shadowHighlight);
 
   --gradientCol: rgb(255, 230, 0);
+
+  --shadow1: rgb(71, 174, 255);
+  --shadow2: rgb(255, 167, 110);
+  --shadow3: rgb(231, 4, 102);
+  --shadow4: rgb(255, 187, 44);
+  --shadow5: rgb(255, 88, 40);
+  --shadow6: rgb(17, 219, 207);
 }
 
 /*--------------------------------------------------------------
@@ -1128,13 +1135,214 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.card{
+  position: relative;
+  width: 380px;
+  height: 470px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0 20px 0 rgba(110, 123, 131, 0.3);
+  transition: all ease-in-out 0.3s;
+
+}
+.circle{
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 480px;
+  background: #333;
+  clip-path: circle();
+  transition: all ease-in-out 0.3s;
+
+}
+.circle::before, .circle1::before, .circle2::before, .circle3::before, .circle4::before, .circle5::before{
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -16px;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: 0 0 0 20px var(--shadow1);
+  border-radius: 50%;
+  z-index: 1000;
+}
+.circle1::before{
+  box-shadow: 0 0 0 20px var(--shadow2);
+
+}
+.circle2::before{
+  box-shadow: 0 0 0 20px var(--shadow3);
+
+}
+.circle3::before{
+  box-shadow: 0 0 0 20px var(--shadow4);
+
+}
+.circle4::before{
+  box-shadow: 0 0 0 20px var(--shadow5);
+
+}
+.circle5::before{
+  box-shadow: 0 0 0 20px var(--shadow6);
+
+}
+.circle .content-inside{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-bottom: 50px;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+}
+.circle .content-inside svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+.card .circle .content-inside path, i{
+  transition: all ease-in-out 0.3s;
+}
+
+.circle .content-inside i{
+  position: relative;
+  font-size: 45px;
+  margin-top: 52px;
+  margin-left: 50px;
+  color: var(--shadow1);
+}
+
+.content-text{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  background: transparent;
+}
+.content-text h4{
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+  text-align: center;
+}
+.content-text p {
+  font-size: .9rem;
+  text-align: center;
+  margin: 5px;
+}
+.content-text .p-text{
+  margin: 8px;
+}
+.content-text .btn-github{
+ margin-left: 28%;
+ margin-top: 15px;
+ transition: all ease-in-out 0.3s;
+}
+.content-text .btn-github .github-icon{
+  padding: 5px 5px;
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.7);
+}
+.content-text .btn-github .github-icon i{
+  color: rgb(0, 0, 0)!important;
+  transition: all ease-in-out 0.3s;
+
+}
+.content-text .btn-github .btn-btn{
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #e6e9ec;
+  color: rgb(0, 0, 0);
+ transition: all ease-in-out 0.3s;
+}
+.content-text .btn-github .btn-btn:hover, .content-text .btn-github .btn-btn:hover .github-icon i{
+  background: var(--shadow1);
+  color: #fff!important;
+}
+.content-text .btn-github .btn-btn p{
+  margin-top: 5px;
+  padding: 2px 4px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.card:hover .circle {
+  border-color: #fff;
+  background-color: var(--cardsAccent);
+  color: #fff;
+  box-shadow: 0px 0 35px 0 var(--shadowHighlight);
+}
+.card:hover {
+  background-color: cornsilk;
+  box-shadow: 0px 0 35px 0 rgba(110, 123, 131, 0.6);
+}
+
+.card-blue:hover .circle .content-inside .icon path {
+  fill: var(--shadow1);
+}
+.card-blue:hover .circle .content-inside .icon i {
+  color: #fff;
+}
+
+.card-orange:hover .circle .content-inside .icon path {
+  fill: var(--shadow2);
+}
+.card-orange:hover .circle .content-inside .icon i {
+  color: #fff;
+}
+
+.card-pink:hover .circle .content-inside .icon path {
+  fill: var(--shadow3);
+}
+.card-pink:hover .circle .content-inside .icon i {
+  color: #fff;
+}
+
+.card-yellow:hover .circle .content-inside .icon path {
+  fill: var(--shadow4);
+}
+.card-yellow:hover .circle .content-inside .icon i {
+  color: #fff;
+}
+
+.card-red:hover .circle .content-inside .icon path {
+  fill: var(--shadow5);
+}
+.card-red:hover .circle .content-inside .icon i {
+  color: #fff;
+}
+
+.card-teal:hover .circle .content-inside .icon path {
+  fill: var(--shadow6);
+}
+.card-teal:hover .circle .content-inside .icon i {
+  color: #fff;
+}
+
+/*
 .services .icon-box {
   text-align: center;  
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0px 0 35px 0 rgba(110, 123, 131, 0.3);
+  box-shadow: 0px 0 20px 0 rgba(110, 123, 131, 0.3);
 }
 
 .services .icon-box .icon {
@@ -1264,9 +1472,10 @@ section {
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
+
 .btn-github{
   margin-top: 20px;
-  margin-left: 25%;
+  margin-left: 24%;
 }
 .github-icon{
   padding: 5px 5px;
@@ -1295,6 +1504,7 @@ section {
   border-right: 1px solid rgba(255, 255, 255, 0.4);
   font-weight: bold;
 }
+*/
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1378,7 +1588,7 @@ section {
 --------------------------------------------------------------*/
 
 .contact .info-bg{
-  height: 350px;
+  
   background: rgba(var(--colors), 0.7);;
   border-radius: 10px;
   box-shadow: 0px 0 15px 0 rgba(var(--colors), 0.4);;
@@ -1387,6 +1597,7 @@ section {
   width: 100%;
   margin-top: 50px;
   margin-left: 20px;
+  margin-bottom: 80px;
   background: transparent;
 }
 
@@ -1428,6 +1639,10 @@ section {
   color: #fff;
 }
 
+.contact-send{
+ border-radius: 10px;
+ background: cornsilk;
+}
 .contact .info .email, .contact .info .phone, .telegram {
   margin-top: 40px;
 }
@@ -1438,6 +1653,8 @@ section {
 }
 
 .contact .php-email-form {
+  margin-top: 40px;
+  margin-bottom: 40px;
   width: 100%;
   background:transparent;
 }
@@ -1544,6 +1761,10 @@ section {
   .info-bg{
   margin-left: 15px;
   margin-right: 15px;
+  }
+  .contact-send{
+    margin-left: 15px;
+    margin-right: 15px;
   }
   
 }
