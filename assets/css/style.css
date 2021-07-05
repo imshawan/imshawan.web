@@ -1589,7 +1589,7 @@ section {
 
 .contact .info-bg{
   
-  background: rgba(var(--colors), 0.7);;
+  background: rgba(var(--colors), 0.8);;
   border-radius: 10px;
   box-shadow: 0px 0 15px 0 rgba(var(--colors), 0.4);;
 }
@@ -1641,7 +1641,7 @@ section {
 
 .contact-send{
  border-radius: 10px;
- background: cornsilk;
+ background: rgb(255, 246, 209);
 }
 .contact .info .email, .contact .info .phone, .telegram {
   margin-top: 40px;
