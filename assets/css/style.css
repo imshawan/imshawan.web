@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@600&display=swap');
-
+@font-face {
+  font-family: 'Calibre-SemiBold';
+  src:url('https://github.com/imshawan/imshawan.web/blob/main/assets/Calibre-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 :root{
   --colors: red;
   --mainAccent: rgba(var(--colors));
@@ -68,6 +74,9 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+h1{
+  font-family:  'Calibre-SemiBold'!important;
 }
 
 /*--------------------------------------------------------------
